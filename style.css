@@ -1,0 +1,102 @@
+body{
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    font-family: "Changa", sans-serif;
+    color: #fabee1;
+    background-color: #000000;
+}
+
+#calculadora{
+    max-width: 360px;
+    background-color: #ffacdb18;
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 30px#ff82cb;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.videofundo{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+.videofundo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#display{
+    font-size: 22px;
+    text-align: right; 
+    width: 100%; 
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 15px; 
+    border-radius: 5px;
+    color: #fabee1;
+    background-color: #000000bb;
+    border: none;
+    box-sizing: border-box;
+}
+
+button{
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000b6;
+    color: #fabee1; 
+    float: left;
+
+}
+
+.operador{
+    background-color: #5f0b20b6;
+}
+
+button:hover{
+    cursor: pointer; 
+    background-color: #000000; 
+    box-shadow: 0 0 5px #fabee1; 
+    transform: scale(0.9);
+} 
+
+#alternarModo{
+    border: 1px solid ;
+    margin-top: 3.8%;
+}
+
+footer{
+    padding-top: 2%;
+    height: 20%;
+}
+
+a{
+    color: #ffffff;
+} 
+
+
+/* DARK MODE */
+
+.dark-mode button{ 
+    background-color: #fabee1ce; 
+    color: #000000;
+    border: 2px solid #0000004b;
+} 
+
+.dark-mode .operador{
+    background-color: #f7d8eae1; 
+}
